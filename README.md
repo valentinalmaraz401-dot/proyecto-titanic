@@ -1,15 +1,28 @@
-# Proyecto 2 — Análisis Titanic
+# Análisis de Pasajeros del Titanic — ED.02
 
-## Descripción
-Este proyecto realiza un análisis exploratorio de datos (EDA), preprocesamiento y limpieza sobre el dataset del Titanic.
+## Datos del Dataset
+* **Nombre del dataset:** Titanic - Machine Learning from Disaster (`train.csv`)
+* **Fuente:** Kaggle Titanic Competition
+* **Descripción breve:** Evaluación de variables socio-demográficas, clase social y características de embarque de 891 pasajeros para determinar patrones de supervivencia.
+
+## Objetivo
+Analizar la relación entre el género, la clase del pasajero, el rango de edad y la condición de acompañamiento familiar con la tasa de supervivencia general.
 
 ## Requisitos
-Python 3.8+, pandas, matplotlib, seaborn.
+Se requiere **Python 3.8+** y las dependencias incluidas en el archivo `requirements.txt` (`pandas`, `matplotlib`, `seaborn`).
 
-## Ejecución
-python3 src/analysis.py
-
-## Conclusiones
-* Género: Mujeres tuvieron mayor tasa de supervivencia (74.2% vs 18.9%).
-* Clase: Primera clase tuvo mayor supervivencia (62.9%).
-* Compañía: Viajar acompañado incrementó la supervivencia (50.6% vs 30.3%).
+## Estructura del Proyecto
+```text
+proyecto-titanic/
+├── data/
+│   └── train.csv
+├── outputs/
+│   └── resultados/
+│       ├── supervivencia_acompanamiento.png
+│       ├── supervivencia_genero_clase.png
+│       └── supervivencia_grupo_edad.png
+├── src/
+│   └── analysis.py
+├── .gitignore
+├── README.md
+└── requirements.txt
